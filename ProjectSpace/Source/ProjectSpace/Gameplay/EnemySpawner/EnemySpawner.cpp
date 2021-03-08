@@ -22,16 +22,5 @@ void AEnemySpawner::BeginPlay()
 void AEnemySpawner::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
-
-	if (CanSpawn)
-	{
-		SpawnTimer += GetWorld()->GetDeltaSeconds;
-
-		if (SpawnTimer >= SpawnTime)
-		{
-
-		}
-	}
-
 }
 

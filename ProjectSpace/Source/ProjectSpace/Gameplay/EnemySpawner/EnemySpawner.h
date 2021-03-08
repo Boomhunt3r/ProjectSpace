@@ -22,14 +22,4 @@ public:
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
-
-
-private:
-	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = "Spawner Settings")
-		float SpawnTime = 1.0f;
-
-	float SpawnTimer = 0.0f;
-
-public:
-	bool CanSpawn = true;
 };
